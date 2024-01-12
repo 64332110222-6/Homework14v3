@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: url(./assets/89898-1920x1080-6b655fe23d3d43c8494f05180e54d6df.avif);
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100vW;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-app {
+  background-color: whitesmoke;
+  height: 600px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.git-repo {
+  font-size: 1.5rem;
+  text-align: end;
+}
+.git-repo a {
+  text-align: end;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.git-repo a:hover {
+  color: rgb(255, 20, 100);
+}
+
+.dashboard {
+  background-color: #222;
+  color: rgb(255, 20, 100);
+  border-top: 2px solid rgb(255, 20, 100);
+  border-bottom: 2px solid rgb(255, 20, 100);
+  width: 100%;
+  padding: 1rem;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.form-add-todo {
+  background-color: #222;
+  border-bottom: 2px solid rgb(255, 20, 100);
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-add-todo>input {
+  color: rgb(255, 20, 100);
+  border: 2px solid rgb(255, 20, 100);
+  background-color: whitesmoke;
+  border-radius: 12px;
+  flex-grow: 3;
+  padding: 4px 8px;
+  font-size: large;
+}
+
+.form-add-todo>button {
+  border-radius: 12px;
+  font-weight: bold;
+  flex-grow: 1;
+  border: 2px solid rgb(255, 20, 100);
+}
+
+.form-add-todo>button:hover {
+  background-color: #222;
+  color: rgb(255, 20, 100);
+}
+
+.todo-container {
+  background-color: #222;
+  border-bottom: 2px solid rgb(255, 20, 100);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.todo-item {
+  background-color: whitesmoke;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  border: 1px solid rgb(255, 20, 100);
+}
+
+.todo-item p {
+  width: 80%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-edit-delete {
+  display: flex;
+  gap: 4px;
+}
+
+.btn-edit-delete>a {
+  border: 1px solid black;
+  background-color: whitesmoke;
+  border-radius: 0.3rem;
+  font-size: small;
+  padding: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-edit {
+  color: black;
+}
+
+.btn-delete {
+  color: red;
+}
+
+.btn-edit:hover {
+  background-color: rgb(252, 244, 0);
+  color: black;
+}
+
+.btn-delete:hover {
+  background-color: red;
+  color: white;
+}
+
+.todo-edit-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  gap: 4px;
+}
+
+.input-check {
+  display: flex;
+  gap: 4px;
+  flex-grow: 1;
+}
+
+.input-check>input {
+  padding: 0.2rem;
+}
+
+.input-input {
+  width: 380px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 20, 100);
+}
+
+.btn-save-cancle {
+  display: flex;
+  gap: 4px;
+  flex-grow: 0.04;
+}
+
+.btn-save {
+  font-weight: bold;
+  border: 2px solid rgb(255, 20, 100);
+  background-color: whitesmoke;
+  border-radius: 0.3rem;
+  font-size: small;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.btn-cancle {
+  font-weight: bold;
+  border: 2px solid rgb(255, 20, 100);
+  background-color: whitesmoke;
+  border-radius: 0.3rem;
+  font-size: small;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background-color: lawngreen;
+}
+
+.btn-cancle:hover {
+  background-color: red;
+  color: white;
+}
+
+.data-completed {
+  color: green;
+}
